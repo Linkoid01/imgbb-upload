@@ -1,3 +1,13 @@
+# title             imgbb-noprompt.py
+# description:      Use this script upload your taken screenshot from clipboard to imgbb.com.
+# author:           Linkoid01
+# date              2024-11-26
+# version           1.0
+# usage             Place your API Key under the payload section, then python imgbb-upload.py
+# copyright         Code can be freely used as long as credit is given.
+# history
+# 2024-11-26        V1.0 released
+
 import requests
 import base64
 from PIL import ImageGrab
@@ -6,7 +16,7 @@ from io import BytesIO
 def upload_to_imgbb(image_data):
     url = "https://api.imgbb.com/1/upload"
     payload = {
-        "key": "4a61c880bf2f81cd47665ae9cf2de6c4",  # Replace "YOUR_API_KEY" with your actual API key
+        "key": "YOUR_API_KEY",  # Replace "YOUR_API_KEY" with your actual API key
         "image": image_data,
         "expiration": 300  # Expiration in seconds, remove if you want no expiration
     }
