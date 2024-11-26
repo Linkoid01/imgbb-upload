@@ -79,7 +79,7 @@ if __name__ == "__main__":
     
     # InquirerPy interactive prompt
     selected_option = inquirer.select(
-        message="Enter expiration time (in seconds 60-15552000; default is 345600 seconds / 4 days):",
+        message="Enter expiration time (in seconds 60-15552000):",
         choices=options,
         default="3 Days = 259200",
     ).execute()
